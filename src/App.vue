@@ -139,7 +139,7 @@
     </div>
     <div>
       <a
-        href="mailto:arbai.ilyas.dev@email.com"
+        href="mailto:arbai.ilyas.dev@gmail.com"
         class="my-8 inline-flex rounded-full bg-emerald-500 px-6 py-3 text-sm font-semibold text-neutral-950 shadow-sm shadow-emerald-500/20 transition-all hover:bg-emerald-400 hover:shadow-emerald-500/30 active:scale-95"
       >
         Send me an email

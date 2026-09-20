@@ -1,14 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist+Pixel&display=swap");
 @import "tailwindcss";
-
-@theme {
-  --font-custom: "Geist Pixel";
-}
 
 body {
   background-color: black;
 }
-
 section {
   scroll-margin-top: 80px;
+}
+img {
+  user-select: none;
+  -webkit-user-drag: none;
 }
