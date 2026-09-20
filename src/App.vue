@@ -1,69 +1,6 @@
 <template>
   <!-- Navbar -->
-  <nav
-    class="sticky top-0 z-50 w-full border-b border-neutral-800/60 bg-neutral-950/80 backdrop-blur-xl flex items-center justify-between px-10 md:px-20 xl:px-30 h-[10vh]"
-  >
-    <a
-      href="#"
-      class="font-mono text-sm xl:text-lg font-bold tracking-tight text-white transition-opacity hover:opacity-80"
-    >
-      <span class="text-emerald-400">&lt;</span>
-      AlgorithmeGenius
-      <span class="text-emerald-400">/&gt;</span>
-    </a>
-
-    <!-- Desktop Navigation -->
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-      <a
-        href="#about"
-        class="group relative py-1 text-neutral-300 transition-colors hover:text-white"
-      >
-        About Me
-        <span
-          class="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 rounded-full bg-emerald-400 transition-transform duration-300 group-hover:scale-x-100"
-        ></span>
-      </a>
-
-      <a
-        href="#projects"
-        class="group relative py-1 text-neutral-300 transition-colors hover:text-white"
-      >
-        Projects
-        <span
-          class="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 rounded-full bg-emerald-400 transition-transform duration-300 group-hover:scale-x-100"
-        ></span>
-      </a>
-
-      <a
-        href="#contact"
-        class="rounded-full bg-emerald-500 px-5 py-2.5 font-semibold shadow-sm shadow-emerald-500/20 transition-all duration-200 hover:bg-emerald-400 hover:shadow-emerald-500/30 active:scale-95 text-white"
-      >
-        Contact
-      </a>
-    </div>
-
-    <!-- Mobile Menu Button -->
-    <button
-      type="button"
-      aria-label="Open navigation menu"
-      class="rounded-lg border border-neutral-800 p-2 text-neutral-300 transition hover:border-neutral-700 hover:text-white md:hidden"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="h-5 w-5"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-        />
-      </svg>
-    </button>
-  </nav>
+  <Nav />
 
   <!-- Hero -->
   <section
@@ -221,6 +158,7 @@
 </template>
 
 <script setup>
+import Nav from "./components/Nav.vue";
 import Technologies from "./components/Technologies.vue";
 import Carousel from "./components/Carousel.vue";
 </script>
