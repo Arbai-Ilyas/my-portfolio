@@ -1,5 +1,11 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import { createApp } from "vue";
+import "./style.css";
+import App from "./App.vue";
 
-createApp(App).mount('#app')
+document.addEventListener("contextmenu", (e) => {
+  if (e.target instanceof HTMLImageElement) {
+    e.preventDefault();
+  }
+});
+
+createApp(App).mount("#app");
