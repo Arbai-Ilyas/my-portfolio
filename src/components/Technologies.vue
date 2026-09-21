@@ -136,7 +136,7 @@ onBeforeUnmount(() => mm?.revert());
             :style="{ '--brand': tech.color }"
           >
             <svg
-              class="h-8 w-8 shrink-0 fill-current transition-colors duration-300 group-hover:[color:var(--brand)]"
+              class="h-8 w-8 shrink-0 fill-current transition-colors duration-300 group-hover:text-(--brand)"
               viewBox="0 0 24 24"
               role="img"
               :aria-label="tech.name"
