@@ -1,6 +1,6 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue";
-import { gsap } from "gsap";
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { gsap } from 'gsap';
 import {
   siVuedotjs,
   siReact,
@@ -13,21 +13,23 @@ import {
   siGit,
   siGithub,
   siOpenjdk,
-} from "simple-icons";
+  siTailwindcss,
+} from 'simple-icons';
 
 const stack = [
-  { name: "Vue.js", icon: siVuedotjs },
-  { name: "React.js", icon: siReact },
-  { name: "React Native", icon: siReact },
-  { name: "Node.js", icon: siNodedotjs },
-  { name: "Express.js", icon: siExpress },
-  { name: "PHP", icon: siPhp },
-  { name: "Laravel", icon: siLaravel },
-  { name: "Java", icon: siOpenjdk, color: "#ED8B00" },
-  { name: "Prisma", icon: siPrisma },
-  { name: "Docker", icon: siDocker },
-  { name: "Git", icon: siGit },
-  { name: "GitHub", icon: siGithub },
+  { name: 'Vue.js', icon: siVuedotjs },
+  { name: 'React.js', icon: siReact },
+  { name: 'React Native', icon: siReact },
+  { name: 'Node.js', icon: siNodedotjs },
+  { name: 'Express.js', icon: siExpress },
+  { name: 'PHP', icon: siPhp },
+  { name: 'Laravel', icon: siLaravel },
+  { name: 'Java', icon: siOpenjdk, color: '#ED8B00' },
+  { name: 'Prisma', icon: siPrisma },
+  { name: 'Docker', icon: siDocker },
+  { name: 'Git', icon: siGit },
+  { name: 'GitHub', icon: siGithub },
+  { name: 'Tailwindscss', icon: siTailwindcss },
 ];
 
 const brandColor = (hex) => {
@@ -35,7 +37,7 @@ const brandColor = (hex) => {
   const g = parseInt(hex.slice(2, 4), 16);
   const b = parseInt(hex.slice(4, 6), 16);
   const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
-  return luminance < 0.3 ? "#e5e5e5" : `#${hex}`;
+  return luminance < 0.3 ? '#e5e5e5' : `#${hex}`;
 };
 
 const items = stack.map((t) => ({
@@ -54,11 +56,11 @@ let mm;
 onMounted(() => {
   mm = gsap.matchMedia();
 
-  mm.add("(prefers-reduced-motion: no-preference)", () => {
+  mm.add('(prefers-reduced-motion: no-preference)', () => {
     const loop = gsap.to(track.value, {
       xPercent: -100 / COPIES,
       duration: 35,
-      ease: "none",
+      ease: 'none',
       repeat: -1,
     });
 
@@ -66,25 +68,25 @@ onMounted(() => {
       gsap.to(loop, {
         timeScale: 0,
         duration: 0.8,
-        ease: "power2.out",
+        ease: 'power2.out',
         overwrite: true,
       });
     const resume = () =>
       gsap.to(loop, {
         timeScale: 1,
         duration: 0.8,
-        ease: "power2.inOut",
+        ease: 'power2.inOut',
         overwrite: true,
       });
 
     const el = marquee.value;
-    el.addEventListener("mouseenter", slow);
-    el.addEventListener("mouseleave", resume);
+    el.addEventListener('mouseenter', slow);
+    el.addEventListener('mouseleave', resume);
 
     // gsap.matchMedia calls this when the query stops matching or on unmount.
     return () => {
-      el.removeEventListener("mouseenter", slow);
-      el.removeEventListener("mouseleave", resume);
+      el.removeEventListener('mouseenter', slow);
+      el.removeEventListener('mouseleave', resume);
     };
   });
 });
