@@ -14,6 +14,7 @@ import {
   siGithub,
   siOpenjdk,
   siTailwindcss,
+  siSocketdotio,
 } from 'simple-icons';
 
 const stack = [
@@ -30,6 +31,7 @@ const stack = [
   { name: 'Git', icon: siGit },
   { name: 'GitHub', icon: siGithub },
   { name: 'Tailwindscss', icon: siTailwindcss },
+  { name: 'Socket.io', icon: siSocketdotio },
 ];
 
 const brandColor = (hex) => {
