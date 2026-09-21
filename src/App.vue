@@ -82,7 +82,7 @@
         </h2>
 
         <a
-          href="https://github.com/Arbai-Ilyas"
+          href="https://github.com/Ilyas-Arbai1"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-2.5 font-semibold text-neutral-950 shadow-sm shadow-emerald-500/20 transition-all duration-200 hover:bg-emerald-400 hover:shadow-emerald-500/30 active:scale-95 h-12"
