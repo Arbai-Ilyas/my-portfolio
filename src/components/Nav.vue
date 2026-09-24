@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 
 const isMenuOpen = ref(false);
 
@@ -18,7 +18,7 @@ const closeMenu = () => {
   >
     <a
       href="#"
-      class="font-mono text-sm xl:text-lg font-bold tracking-tight text-white transition-opacity hover:opacity-80"
+      class="font-mono max-[375px]:text-[10px] text-sm xl:text-lg font-bold tracking-tight text-white transition-opacity hover:opacity-80"
     >
       <span class="text-emerald-400">&lt;</span>
       AlgorithmeGenius
@@ -60,21 +60,21 @@ const closeMenu = () => {
       type="button"
       aria-label="Toggle navigation menu"
       :aria-expanded="isMenuOpen"
-      class="relative z-50 flex h-10 w-10 items-center justify-center rounded-xl border border-neutral-800 bg-neutral-900/80 text-white transition-all duration-200 hover:border-neutral-700 hover:bg-neutral-800 active:scale-90 md:hidden"
+      class="relative z-50 flex max-[375px]:h-7 max-[375px]:w-7 h-10 w-10 items-center justify-center rounded-xl border border-neutral-800 bg-neutral-900/80 text-white transition-all duration-200 hover:border-neutral-700 hover:bg-neutral-800 active:scale-90 md:hidden"
       @click="toggleMenu"
     >
       <span
-        class="absolute h-px w-5 rounded-full bg-white transition-all duration-300"
+        class="absolute h-px max-[375px]:w-4 w-5 rounded-full bg-white transition-all duration-300"
         :class="isMenuOpen ? 'rotate-45' : '-translate-y-1.5'"
       ></span>
 
       <span
-        class="absolute h-px w-5 rounded-full bg-white transition-all duration-200"
+        class="absolute h-px max-[375px]:w-4 w-5 rounded-full bg-white transition-all duration-200"
         :class="isMenuOpen ? 'opacity-0' : 'opacity-100'"
       ></span>
 
       <span
-        class="absolute h-px w-5 rounded-full bg-white transition-all duration-300"
+        class="absolute h-px max-[375px]:w-4 w-5 rounded-full bg-white transition-all duration-300"
         :class="isMenuOpen ? '-rotate-45' : 'translate-y-1.5'"
       ></span>
     </button>

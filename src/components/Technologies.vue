@@ -99,7 +99,7 @@ onBeforeUnmount(() => mm?.revert());
 <template>
   <!-- Technologies -->
   <section
-    class="w-full border-y border-neutral-800/60 bg-neutral-950 flex flex-col justify-center h-[15vh]"
+    class="w-full border-y border-neutral-800/60 bg-neutral-950 flex flex-col justify-center max-[375px]:py-3 max-[375px]:h-full h-[15vh]"
     aria-labelledby="tech-heading"
   >
     <h2
@@ -140,7 +140,7 @@ onBeforeUnmount(() => mm?.revert());
             :style="{ '--brand': tech.color }"
           >
             <svg
-              class="h-8 w-8 shrink-0 fill-current transition-colors duration-300 group-hover:text-(--brand)"
+              class="max-[375px]:h-5 max-[375px]:w-5 h-8 w-8 shrink-0 fill-current transition-colors duration-300 group-hover:text-(--brand)"
               viewBox="0 0 24 24"
               role="img"
               :aria-label="tech.name"
