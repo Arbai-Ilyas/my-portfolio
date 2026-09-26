@@ -11,7 +11,7 @@ import { siInstagram, siMinutemailer } from 'simple-icons';
   <!-- About -->
   <section
     id="about"
-    class="max-[375px]:h-full max-[375px]:scroll-mt-20 h-[75vh] flex flex-col md:flex-row w-full items-center max-[375px]:py-5 py-10 px-10 md:px-20 xl:px-30 max-[375px]:gap-5 gap-10"
+    class="max-[375px]:h-full max-[375px]:scroll-mt-20 h-[75svh] flex flex-col md:flex-row w-full items-center max-[375px]:py-5 py-10 px-10 md:px-20 xl:px-30 max-[375px]:gap-5 gap-10"
   >
     <!-- Hero Content -->
     <div class="w-full md:w-1/2">

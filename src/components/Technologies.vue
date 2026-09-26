@@ -15,23 +15,25 @@ import {
   siOpenjdk,
   siTailwindcss,
   siSocketdotio,
+  siC,
 } from 'simple-icons';
 
 const stack = [
   { name: 'Vue.js', icon: siVuedotjs },
   { name: 'React.js', icon: siReact },
+  { name: 'Tailwindscss', icon: siTailwindcss },
   { name: 'React Native', icon: siReact },
   { name: 'Node.js', icon: siNodedotjs },
   { name: 'Express.js', icon: siExpress },
+  { name: 'Socket.io', icon: siSocketdotio },
+  { name: 'Prisma', icon: siPrisma },
   { name: 'PHP', icon: siPhp },
   { name: 'Laravel', icon: siLaravel },
   { name: 'Java', icon: siOpenjdk, color: '#ED8B00' },
-  { name: 'Prisma', icon: siPrisma },
+  { name: 'C & C#', icon: siC },
   { name: 'Docker', icon: siDocker },
   { name: 'Git', icon: siGit },
   { name: 'GitHub', icon: siGithub },
-  { name: 'Tailwindscss', icon: siTailwindcss },
-  { name: 'Socket.io', icon: siSocketdotio },
 ];
 
 const brandColor = (hex) => {
